@@ -1,0 +1,9 @@
+/* base config */
+html, head, body, div, title, p, h1, h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
