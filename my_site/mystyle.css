@@ -1,0 +1,6 @@
+html, head, body, div, title, p, h1, h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}

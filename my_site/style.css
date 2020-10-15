@@ -1,9 +1,36 @@
 /* base config */
-html, head, body, div, title, p, h1, h2 {
+html, head, body, div, title {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+}
+
+
+header, footer, nav {
+  display: block;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  overflow: hidden;
+}
+
+
+
+
+/* header config */
+#header {
+  cursor: default;
+  display: inline-block;
+  /* position: relative; */
+  text-align: center;
+  top: -1em;
+  vertical-align: middle;
 }
