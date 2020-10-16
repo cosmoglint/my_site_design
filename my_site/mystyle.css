@@ -4,3 +4,21 @@ html, head, body, div, title, p, h1, h2 {
   border: 0;
   box-sizing: border-box;
 }
+
+.nav {
+  margin: 0;
+}
+
+.nav ul {
+  margin: 0;
+}
+
+.nav li {
+  display: inline;
+  padding; 0.5em;
+}
+
+
+#wrapper {
+  background-color: red;
+}
