@@ -2,18 +2,31 @@ html, head, body, div, title, p, h1, h2 {
   margin: 0;
   padding: 0;
   border: 0;
+  font: inherit;
+  font-size: 100%;
   box-sizing: border-box;
+  vertical-align: baseline;
 }
 
-.nav {
+nav {
   margin: 0;
+  display: block;
 }
 
-.nav ul {
-  margin: 0;
+#nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1.5em 0 1.5em 0;
 }
 
-.nav li {
+#nav ul{
+
+}
+
+#nav li {
   display: inline;
   padding; 0.5em;
 }
