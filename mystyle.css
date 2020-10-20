@@ -1,3 +1,9 @@
+:root {
+  --transparent-grey: rgba(180,180,180,0.35);
+}
+
+
+
 html, head, body, div, title, p, h1, h2 {
   margin: 0;
   padding: 0;
@@ -20,15 +26,25 @@ nav {
   width: 100%;
   text-align: center;
   padding: 1.5em 0 1.5em 0;
+  overflow: hidden;
 }
 
-#nav ul{
+#nav > ul{
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  border-left: solid 2px var(--transparent-grey);
+  border-right: solid 2px var(--transparent-grey);
 
 }
 
-#nav li {
-  display: inline;
-  padding; 0.5em;
+#nav > ul:before, #nav > ul:after {
+  
+}
+
+#nav  > ul > li {
+  display: inline-block;
+  margin: 0.5em 4em 0.5em 4em;
 }
 
 
