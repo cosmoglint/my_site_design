@@ -39,7 +39,10 @@ nav {
 }
 
 #nav > ul:before, #nav > ul:after {
-  
+  content: '';
+  display: block;
+  border: solid 2px var(--transparent-grey);
+
 }
 
 #nav  > ul > li {
