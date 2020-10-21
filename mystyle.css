@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 
 :root {
   --transparent-grey: rgba(180,180,180,0.35);
@@ -16,9 +16,18 @@ html, head, body, div, title, p, h1, h2 {
   vertical-align: baseline;
 }
 
+body {
+  color: #ccc;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15pt;
+  font-weight: 300 !important;
+  letter-spacing: -0.025em;
+  line-height: 1.75em;
+}
+
 html {
   height: 100%;
-  background-color: blue;
+  background-color: red;
 }
 nav {
   margin: 0;
@@ -96,17 +105,30 @@ nav {
   border-color: rgba(192, 192, 192, 0.35);
 
 }
+
+
 body {
   height: auto;
 }
+
 #content {
   text-align: center;
   vertical-align: middle;
+  margin-top: 20%;
 }
 
-#header {
-  text-align: center;
-  vertical-align: middle;
-  /* padding-top: 500px; */
-  height: 50%;
+
+#content > h1 {
+  font-size: 7em;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1em;
+}
+
+
+#content > p {
+  font-size: 2em;
+  margin: 0.75em 0 0.25em 0;
+	color: rgb(100,100,100);
+	font-weight: 900;
 }
