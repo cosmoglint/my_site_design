@@ -27,7 +27,7 @@ body {
 
 html {
   height: 100%;
-  background-color: red;
+  background-color: white;
 }
 nav {
   margin: 0;
@@ -119,7 +119,7 @@ body {
 
 
 #content > h1 {
-  font-size: 7em;
+  font-size: 8em;
   font-weight: 900;
   letter-spacing: -0.02em;
   line-height: 1em;
