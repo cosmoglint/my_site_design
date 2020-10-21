@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
+
 :root {
   --transparent-grey: rgba(180,180,180,0.35);
 }
@@ -13,6 +15,8 @@ html, head, body, div, title, p, h1, h2 {
   box-sizing: border-box;
   vertical-align: baseline;
 }
+
+
 
 nav {
   margin: 0;
@@ -35,6 +39,9 @@ nav {
   margin: 0;
   border-left: solid 2px var(--transparent-grey);
   border-right: solid 2px var(--transparent-grey);
+  height: 2em;
+  font-size: 1em;
+  font-stretch: expanded;
 
 }
 
@@ -42,14 +49,51 @@ nav {
   content: '';
   display: block;
   border: solid 2px var(--transparent-grey);
+  position: absolute;
+  width: 300%;
+  top: 50%;
+  margin-top: -2px;
+  height: 1px;
+}
 
+#nav > ul:before{
+  left: 100%;
+  margin-left: 1px;
+}
+
+
+#nav > ul:after{
+  right: 100%;
+  margin-left: 1px;
 }
 
 #nav  > ul > li {
   display: inline-block;
-  margin: 0.5em 4em 0.5em 4em;
+  border-radius: 5em;
+  margin: 0.5em 1.5em 0.5em 1.5em;
+  border-color: transparent;
+  font-size: 1.2em;
+
 }
 
+#nav > ul > li > a {
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 0.4em;
+  padding: 0.8em;
+  border: solid 1px transparent;
+  color: inherit;
+  -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+	-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+	-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+	transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+}
+
+#nav > ul > li > a:hover {
+  background-color: white;
+  border-color: rgba(192, 192, 192, 0.35);
+
+}
 
 #wrapper {
   background-color: red;
