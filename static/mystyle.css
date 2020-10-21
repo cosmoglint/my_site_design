@@ -111,7 +111,10 @@ body {
   height: auto;
 }
 
+
 #content {
+  position: relative;
+  z-index: 3;
   text-align: center;
   vertical-align: middle;
   margin-top: 20%;
@@ -131,4 +134,25 @@ body {
   margin: 0.75em 0 0.25em 0;
 	color: rgb(100,100,100);
 	font-weight: 900;
+}
+
+
+
+#shadows {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -13%;
+  z-index: 0;
+  /* margin-top: 20%; */
+}
+
+
+#shadows > h1 {
+  /* color: rgb(100,100,100); */
+  /* color: white; */
+  font-size: 8.2em;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1em;
 }
