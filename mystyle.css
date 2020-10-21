@@ -16,8 +16,10 @@ html, head, body, div, title, p, h1, h2 {
   vertical-align: baseline;
 }
 
-
-
+html {
+  height: 100%;
+  background-color: blue;
+}
 nav {
   margin: 0;
   display: block;
@@ -94,7 +96,17 @@ nav {
   border-color: rgba(192, 192, 192, 0.35);
 
 }
+body {
+  height: auto;
+}
+#content {
+  text-align: center;
+  vertical-align: middle;
+}
 
-#wrapper {
-  background-color: red;
+#header {
+  text-align: center;
+  vertical-align: middle;
+  /* padding-top: 500px; */
+  height: 50%;
 }
