@@ -2,7 +2,7 @@
 
 :root {
   --transparent-grey: rgba(180,180,180,0.35);
-  --dark-black: rgb(100,100,100);
+  --dark-black: rgb(125,125,125);
 }
 
 
@@ -29,6 +29,8 @@ body {
 
 html {
   height: 100%;
+  min-width: fit-content;
+  min-height: fit-content;
   background-color: white;
 }
 nav {
@@ -140,8 +142,7 @@ nav {
   line-height: 1em;
   text-shadow:
   0.01em 0.01em var(--dark-black),
-  0.02em 0.02em var(--dark-black),
-  0.03em 0.03em var(--dark-black);
+  0.02em 0.02em var(--dark-black);
   /* text-shadow: -0.02em 0 var(--dark-black), 0.02em 0 var(--dark-black); */
 }
 
@@ -154,23 +155,10 @@ nav {
 	font-weight: 900;
 }
 
+#buttons {
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
 
-
-#shadows {
-  position: relative;
-  text-align: center;
-  vertical-align: middle;
-  margin-top: -13%;
-  z-index: 0;
-  /* margin-top: 20%; */
-}
-
-
-#shadows > h1 {
-  /* color: rgb(100,100,100); */
-  /* color: white; */
-  font-size: 8.2em;
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  line-height: 1em;
+  z-index: 5;
 }

@@ -20,6 +20,9 @@ button = document.getElementById("play_button");
 
 my_name = document.getElementById("name")
 
+
+dark_mode_button = document.getElementById("night_mode")
+
 // function preload(){
 // 	overlay_img = loadImage('exxperiment/overlay-pattern.png');
 // }
@@ -107,14 +110,18 @@ function reportsize(){
 	resizeCanvas(windowWidth,windowHeight);
 	init();
 }
+
+
 function change_direction(){
 	move_magnitude = -(move_magnitude);
 	if (move_magnitude==1){
+		dark_mode_button.innerHTML = "dark mode";
 		circle_color = color("white");
 		stuff_color = color("white");
 		circle_color.setAlpha(150)
 	}
 	else{
+		dark_mode_button.innerHTML = "light mode";
 		circle_color = color(10,10,10);
 		circle_color.setAlpha(150);
 		stuff_color = (10,10,10);
@@ -122,6 +129,7 @@ function change_direction(){
 }
 
 window.addEventListener('resize', reportsize);
+
 
 // changing theme to dark when clicked
 // window.addEventListener('click', change_direction);
@@ -167,7 +175,7 @@ function setup(){
 
 function draw(){
 	tim += 0.05;
-	col_c += 0.03;
+	col_c += 0;
 	moving += 0.02 * move_magnitude;
 	i_off = moving;
 	for (i = 0; i < wn; i++){
@@ -178,7 +186,7 @@ function draw(){
 		}
 		i_off += 0.1;
 	}
-	ncol = color(map(noise(col_c,tim),0,1,0,255),100,255);
+	ncol = color(map(noise(col_c,tim/4),0,1,0,255),100,255);
 	background(ncol);
 	for (i = 0; i < wn; i++){
 		for (j = 0; j < hn; j++){
@@ -191,6 +199,9 @@ function draw(){
 	stroke(ncol);
 	my_name.style.color = ncol;
 	fill(circle_color);
-circle(mouseX,mouseY,100);
+	circle(mouseX,mouseY,5);
+	// circle(mouseX,mouseY,10);
+
+	dark_mode_button.onclick = function(){change_direction();};
 
 }
