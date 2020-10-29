@@ -17,6 +17,7 @@ html, head, body, div, title, p, h1, h2 {
 }
 
 body {
+  height: 100%;
   color: #ccc;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15pt;
@@ -34,6 +35,16 @@ nav {
   display: block;
 }
 
+
+#wrapper {
+  height: 100%;
+}
+
+#main{
+  height: 100%;
+}
+
+
 #nav {
   position: absolute;
   top: 0;
@@ -42,6 +53,7 @@ nav {
   text-align: center;
   padding: 1.5em 0 1.5em 0;
   overflow: hidden;
+  z-index: 5;
 }
 
 #nav > ul{
@@ -107,21 +119,20 @@ nav {
 }
 
 
-body {
-  height: auto;
-}
-
 
 #content {
+  height: 100%;
+  display: grid;
+  place-items: center;
   position: relative;
   z-index: 3;
   text-align: center;
   vertical-align: middle;
-  margin-top: 20%;
+  /* margin-top: 2x0%; */
 }
 
 
-#content > h1 {
+#namediv > h1 {
   font-size: 8em;
   font-weight: 900;
   letter-spacing: -0.02em;
@@ -129,7 +140,8 @@ body {
 }
 
 
-#content > p {
+#namediv > p {
+
   font-size: 2em;
   margin: 0.75em 0 0.25em 0;
 	color: rgb(100,100,100);
