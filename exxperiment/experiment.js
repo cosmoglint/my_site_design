@@ -122,7 +122,9 @@ function change_direction(){
 }
 
 window.addEventListener('resize', reportsize);
-window.addEventListener('click', change_direction);
+
+// changing theme to dark when clicked
+// window.addEventListener('click', change_direction);
 
 //window.addEventListener('mousemove', aversion);
 
@@ -171,7 +173,7 @@ function draw(){
 	for (i = 0; i < wn; i++){
 		j_off = moving ;
 		for (j = 0; j < hn; j++){
-			tries[i][j].set_und(map(noise(i_off,j_off),0,1,0,10));
+			tries[i][j].set_und(map(noise(i_off,j_off),0,1,0,8.5));
 			j_off += 0.1;
 		}
 		i_off += 0.1;

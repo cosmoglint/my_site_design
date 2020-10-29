@@ -2,6 +2,7 @@
 
 :root {
   --transparent-grey: rgba(180,180,180,0.35);
+  --dark-black: rgb(100,100,100);
 }
 
 
@@ -47,7 +48,7 @@ nav {
 
 #nav {
   position: absolute;
-  top: 0;
+  top: 5%;
   left: 0;
   width: 100%;
   text-align: center;
@@ -73,7 +74,7 @@ nav {
   display: block;
   border: solid 2px var(--transparent-grey);
   position: absolute;
-  width: 300%;
+  width: 1%;
   top: 50%;
   margin-top: -2px;
   height: 1px;
@@ -105,7 +106,7 @@ nav {
   border-radius: 0.4em;
   padding: 0.8em;
   border: solid 1px transparent;
-  color: inherit;
+  color: var(--dark-black);
   -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 	-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 	-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
@@ -133,18 +134,23 @@ nav {
 
 
 #namediv > h1 {
-  font-size: 8em;
+  font-size: 7em;
   font-weight: 900;
   letter-spacing: -0.02em;
   line-height: 1em;
+  text-shadow:
+  0.01em 0.01em var(--dark-black),
+  0.02em 0.02em var(--dark-black),
+  0.03em 0.03em var(--dark-black);
+  /* text-shadow: -0.02em 0 var(--dark-black), 0.02em 0 var(--dark-black); */
 }
 
 
 #namediv > p {
 
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 0.75em 0 0.25em 0;
-	color: rgb(100,100,100);
+	color: var(--dark-black);
 	font-weight: 900;
 }
 
