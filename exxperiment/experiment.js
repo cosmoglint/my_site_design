@@ -123,7 +123,7 @@ function change_direction(){
 	}
 	else{
 		dark_mode_button.className = "fas fa-sun fa-ls";
-		document.documentElement.style.setProperty('--inversion-color', 'rgb(10,10,10)');
+		document.documentElement.style.setProperty('--inversion-color', 'rgb(1gitpusher0,10,10)');
 		circle_color = color(10,10,10);
 		circle_color.setAlpha(150);
 		stuff_color = (10,10,10);
