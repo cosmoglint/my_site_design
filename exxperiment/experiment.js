@@ -115,13 +115,15 @@ function reportsize(){
 function change_direction(){
 	move_magnitude = -(move_magnitude);
 	if (move_magnitude==1){
-		dark_mode_button.innerHTML = "dark mode";
+		dark_mode_button.className = "fas fa-moon fa-ls";
+		document.documentElement.style.setProperty('--inversion-color', 'rgb(255,255,255)');
 		circle_color = color("white");
 		stuff_color = color("white");
 		circle_color.setAlpha(150)
 	}
 	else{
-		dark_mode_button.innerHTML = "light mode";
+		dark_mode_button.className = "fas fa-sun fa-ls";
+		document.documentElement.style.setProperty('--inversion-color', 'rgb(10,10,10)');
 		circle_color = color(10,10,10);
 		circle_color.setAlpha(150);
 		stuff_color = (10,10,10);
@@ -137,6 +139,7 @@ window.addEventListener('resize', reportsize);
 //window.addEventListener('mousemove', aversion);
 
 function init(){
+	var black = color(0,0,0);
 	ww = window.innerWidth;
 	wh = window.innerHeight;
 	wn = round(ww/x) + 2;
