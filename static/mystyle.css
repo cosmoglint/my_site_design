@@ -108,7 +108,7 @@ nav {
   text-decoration: none;
   border-radius: 0.4em;
   padding: 0.8em;
-  border: solid 1px transparent;
+  border: solid 3px transparent;
   color: var(--dark-black);
   -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 	-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
@@ -184,4 +184,56 @@ nav {
 #night_mode:hover {
   background-color: var(--inversion-color);
   border-color: rgba(192, 192, 192, 0.35);
+}
+
+
+#footer {
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
+  text-align: center;
+}
+
+#footer > nav {
+  display: block;
+
+}
+
+#footer > nav > ul{
+  list-style: none;
+  position: relative;
+}
+
+#footer > nav > ul > li {
+  align-items: center;
+  display: inline-block;
+  width: 1.5em;
+  height: 2em;
+  padding: 1em;
+}
+
+#footer > nav > ul > li > a > i{
+  height: 50%;
+}
+
+#footer > nav > ul > li > a {
+  position: absolute;
+  height: 1.8em;
+  width: 1.8em;
+  border-radius: 0.5em;
+  color: var(--dark-black);
+  z-index: 5;
+  border: solid 3px transparent;
+  -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+	-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+	-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+	transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+
+}
+
+#footer > nav > ul > li > a:hover {
+  /* background-color:x */
+  background-color: var(--inversion-color);
+  border-color: rgba(192, 192, 192, 0.35);
+  cursor: pointer;
 }
