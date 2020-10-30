@@ -15,37 +15,11 @@ var move_magnitude = 1;
 var stuff_color;
 var cursor_color;
 
-bgsound = document.getElementById("bgaudio");
-button = document.getElementById("play_button");
-
 my_name = document.getElementById("name")
 
 
 dark_mode_button = document.getElementById("night_mode")
 
-// function preload(){
-// 	overlay_img = loadImage('exxperiment/overlay-pattern.png');
-// }
-
-function toggle_audio(){
-	if (bgsound.paused){
-		console.log(1);
-		playAudio();
-	}
-	else{
-		console.log(0);
-		pauseAudio();
-	}
-}
-
-function playAudio(){
-	bgsound.play();
-	button.innerHTML = "pause";
-}
-function pauseAudio(){
-	bgsound.pause();
-	button.innerHTML = "press to play music";
-}
 
 function avg(p1,p2){
 	ans = createVector((p1.x+p2.x)/2,(p1.y+p2.y)/2);

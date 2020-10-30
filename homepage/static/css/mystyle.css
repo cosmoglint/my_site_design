@@ -239,3 +239,14 @@ nav {
   border-color: rgba(192, 192, 192, 0.35);
   cursor: pointer;
 }
+
+
+/* media stuff */
+
+@media screen and (max-width: 1080px){
+  #buttons {
+    left: 8%;
+    bottom: 5%;
+
+  }
+}
