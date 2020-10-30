@@ -34,6 +34,7 @@ html {
   min-height: fit-content;
   background-color: var(--inversion-color);
 }
+
 nav {
   margin: 0;
   display: block;
@@ -125,6 +126,7 @@ nav {
 
 #content {
   height: 100%;
+  cursor: default;
   display: grid;
   place-items: center;
   position: relative;
@@ -166,6 +168,7 @@ nav {
 
 #night_mode {
   display: grid;
+  cursor: pointer;
   place-items: center;
   height: 1.8em;
   width: 1.8em;
