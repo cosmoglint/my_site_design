@@ -134,6 +134,7 @@ body {
 }
 
 .title > h1 {
+  color: var(--white-pure);
   text-shadow: 0.02em 0.02em black;
 }
 
@@ -253,4 +254,13 @@ body {
   width: 60%;
   margin: auto;
   text-align: left;
+}
+
+
+#buttons {
+  position: absolute;
+  bottom: 8%;
+  left: 6%;
+  color: var(--dark-black);
+  z-index: 5;
 }
