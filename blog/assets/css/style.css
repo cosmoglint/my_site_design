@@ -127,8 +127,9 @@ body {
   font-size: 5em;
   color: var(--white-pure);
   font-weight: bold;
-  padding: 1em;
+  padding: 3em;
   width: 100%;
+  line-height: 1em;
   text-align: center;
 
 }
