@@ -2,7 +2,8 @@
 
 :root {
   --transparent-grey: rgba(180,180,180,0.35);
-  --dark-black: rgb(125,125,125);
+  --average-black: rgb(125,125,125);
+  --dark-black: rgb(30,30,30);
   --inversion-color: rgb(255,255,255);
   --white-pure: rgb(250,250,250);
 }
@@ -18,7 +19,7 @@ html, head, body, div, title, p, h1, h2, h3 {
 }
 
 html {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   font-size: 15pt;
   font-weight: 300 !important;
@@ -97,7 +98,7 @@ body {
   border-radius: 0.4em;
   padding: 0.8em;
   border: solid 3px transparent;
-  color: var(--dark-black);
+  color: var(--average-black);
   -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 	-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 	-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
@@ -262,6 +263,59 @@ body {
   position: absolute;
   bottom: 8%;
   left: 6%;
+  color: var(--average-black);
+  z-index: 5;
+}
+
+#footer {
+  position: relative;
+  width: 100%;
+  bottom: 5%;
+  text-align: center;
+}
+
+#footer > nav {
+  display: block;
+
+}
+
+#footer > nav > ul{
+  list-style: none;
+  position: relative;
+}
+
+#footer > nav > ul > li {
+  align-items: center;
+  display: inline-block;
+  width: 1.5em;
+  height: 2em;
+  padding: 1em;
+}
+
+#footer > nav > ul > li > a > i{
+  height: 50%;
+}
+
+#footer > nav > ul > li > a {
+  position: absolute;
+  align-self: center;
+  /* left: 0; */
+  height: 1.8em;
+  width: 1.8em;
+  border-radius: 0.5em;
   color: var(--dark-black);
   z-index: 5;
+  border: solid 3px transparent;
+  -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+	-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+	-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+	transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+
+}
+
+#footer > nav > ul > li > a:hover {
+  /* background-color:x */
+  background-color: var(--inversion-color);
+  border-color: rgba(192, 192, 192, 0.35);
+  cursor: pointer;
 }

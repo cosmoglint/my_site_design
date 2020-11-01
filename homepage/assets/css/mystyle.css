@@ -2,7 +2,7 @@
 
 :root {
   --transparent-grey: rgba(180,180,180,0.35);
-  --dark-black: rgb(125,125,125);
+  --average-black: rgb(125,125,125);
   --inversion-color: rgb(255,255,255);
 }
 
@@ -109,7 +109,7 @@ nav {
   border-radius: 0.4em;
   padding: 0.8em;
   border: solid 3px transparent;
-  color: var(--dark-black);
+  color: var(--average-black);
   -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 	-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 	-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
@@ -143,9 +143,9 @@ nav {
   letter-spacing: -0.02em;
   line-height: 1em;
   text-shadow:
-  0.01em 0.01em var(--dark-black),
-  0.02em 0.02em var(--dark-black);
-  /* text-shadow: -0.02em 0 var(--dark-black), 0.02em 0 var(--dark-black); */
+  0.01em 0.01em var(--average-black),
+  0.02em 0.02em var(--average-black);
+  /* text-shadow: -0.02em 0 var(--average-black), 0.02em 0 var(--average-black); */
 }
 
 
@@ -153,7 +153,7 @@ nav {
 
   font-size: 1.5em;
   margin: 0.75em 0 0.25em 0;
-	color: var(--dark-black);
+	color: var(--average-black);
 	font-weight: 900;
 }
 
@@ -162,7 +162,7 @@ nav {
   position: absolute;
   bottom: 8%;
   left: 6%;
-  color: var(--dark-black);
+  color: var(--average-black);
   z-index: 5;
 }
 
@@ -174,7 +174,7 @@ nav {
   width: 1.8em;
   border: solid 1px transparent;
   border-radius: 0.4em;
-  color: var(--dark-black);
+  color: var(--average-black);
   -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 	-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 	-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
@@ -223,7 +223,7 @@ nav {
   height: 1.8em;
   width: 1.8em;
   border-radius: 0.5em;
-  color: var(--dark-black);
+  color: var(--average-black);
   z-index: 5;
   border: solid 3px transparent;
   -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
