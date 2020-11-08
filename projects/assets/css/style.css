@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+
+:root {
+  --transparent-grey: rgba(180,180,180,0.35);
+  --average-black: rgb(125,125,125);
+  --dark-black: rgb(30,30,30);
+  --inversion-color: rgb(255,255,255);
+  --white-pure: rgb(250,250,250);
+  --white-dull: rgb(180,180,180);
+}
+
+html, head, body, div, title, p, h1, h2, h3{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+html {
+  min-height: 100%;
+  width: 100%;
+  font-size: 15pt;
+  font-weight: 300 !important;
+  letter-spacing: -0.025em;
+  line-height: 1.75em;
+
+  background-image: url("../images/bg.png");
+  background-position: (0,0);
+  background-attachment: fixed;
+}
+
+body {
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+
+
+#nav {
+  position: absolute;
+  top: 3%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1.5em 0 1.5em 0;
+  overflow: hidden;
+  z-index: 5;
+}
+
+#nav > ul{
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  border-left: solid 2px var(--transparent-grey);
+  border-right: solid 2px var(--transparent-grey);
+  height: 2em;
+  font-size: 1em;
+  font-stretch: expanded;
+
+}
+
+#nav > ul:before, #nav > ul:after {
+  content: '';
+  display: block;
+  border: solid 2px var(--transparent-grey);
+  position: absolute;
+  width: 1%;
+  top: 50%;
+  margin-top: -2px;
+  height: 1px;
+}
+
+#nav > ul:before{
+  left: 100%;
+  margin-left: 1px;
+}
+
+
+#nav > ul:after{
+  right: 100%;
+  margin-left: 1px;
+}
+
+#nav  > ul > li {
+  display: inline-block;
+  border-radius: 5em;
+  margin: 0.5em 1.5em 0.5em 1.5em;
+  border-color: transparent;
+  font-size: 1.2em;
+
+}
+
+#nav > ul > li > a {
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 0.4em;
+  padding: 0.8em;
+  border: solid 3px transparent;
+  color: var(--average-black);
+  -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+	-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+	-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+	transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+}
+
+#nav > ul > li > a:hover {
+  background-color: var(--inversion-color);
+  border-color: rgba(192, 192, 192, 0.35);
+
+}
+
+.wrapper {
+  height: 100%;
+  align-items: center;
+}
