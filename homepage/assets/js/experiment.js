@@ -163,7 +163,7 @@ function draw(){
 		}
 		i_off += 0.1;
 	}
-	ncol = color(map(noise(col_c,tim/4),0,1,0,255),100,255);
+	ncol = color(map(noise(col_c,tim/4),0,1,0,255),50,250);
 	background(ncol);
 	for (i = 0; i < wn; i++){
 		for (j = 0; j < hn; j++){
