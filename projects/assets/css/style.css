@@ -167,22 +167,23 @@ body {
 }
 
 .content > .collections > .projects > .single_project {
+  position: relative;
   padding-top: 2em;
-  place-items: center;
+  text-align: left;
 }
 
 .content > .collections > .projects > .single_project > .image  {
+
   display:inline-block;
   width: 50%;
-  left: 0;
+  /* padding-right: 10%; */
 }
 
 .content > .collections > .projects > .single_project > .description {
   display: inline-block;
-  position: relative;
+  position: absolute;
   width: 50%;
-
-  height:100%;
+  top: 50%;
   margin-top: auto;
 }
 
