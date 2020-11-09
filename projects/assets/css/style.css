@@ -135,7 +135,7 @@ body {
   font-size: 5em;
   color: var(--white-pure);
   font-weight: bold;
-  padding: 3em;
+  padding: 2em;
   width: 100%;
   line-height: 1em;
   text-align: center;
@@ -166,7 +166,28 @@ body {
   background-color: white;
 }
 
-.content > .collections > .projects > .single_project > .image > img{
+.content > .collections > .projects > .single_project {
+  padding-top: 2em;
+  place-items: center;
+}
+
+.content > .collections > .projects > .single_project > .image  {
+  display:inline-block;
+  width: 50%;
+  left: 0;
+}
+
+.content > .collections > .projects > .single_project > .description {
+  display: inline-block;
+  position: relative;
+  width: 50%;
+
+  height:100%;
+  margin-top: auto;
+}
+
+
+.content > .collections > .projects > .single_project > .image > img {
   position: relative;
   max-width: 300px;
   max-height: 300px;
