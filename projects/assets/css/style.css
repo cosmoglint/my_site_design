@@ -30,6 +30,8 @@ html {
   background-image: url("../images/bg.png");
   background-position: (0,0);
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
@@ -124,15 +126,27 @@ body {
   width: 80%;
   height: 100%;
   margin-top: 10%;
+  padding-bottom: 2.5%;
   align-tiems: center;
   text-align: center;
 }
 
-.content > .title {
-  font-size: 3em;
+.title {
+  font-size: 5em;
+  color: var(--white-pure);
   font-weight: bold;
-  padding: 2em 0 2em 0;
+  padding: 3em;
+  width: 100%;
+  line-height: 1em;
+  text-align: center;
+
 }
+
+.title > h1 {
+  color: var(--white-pure);
+  text-shadow: 0.02em 0.02em black;
+}
+
 
 .content > .collections {
   width: 80%;
@@ -140,6 +154,11 @@ body {
   background-color: blue;
 }
 
+.content > .collections > p {
+  width: 80%;
+  margin: auto;
+  padding-top: 3%;
+}
 
 .content > .collections > .projects {
   width: 80%;
@@ -147,7 +166,70 @@ body {
   background-color: white;
 }
 
-.content > .collections > .projects > .single_project > img{
+.content > .collections > .projects > .single_project > .image > img{
+  position: relative;
   max-width: 300px;
   max-height: 300px;
+}
+
+
+
+
+
+
+
+
+
+#footer {
+  position: relative;
+  width: 100%;
+  bottom: 5%;
+  text-align: center;
+}
+
+#footer > nav {
+  display: block;
+
+}
+
+#footer > nav > ul{
+  list-style: none;
+  position: relative;
+}
+
+#footer > nav > ul > li {
+  align-items: center;
+  display: inline-block;
+  width: 1.5em;
+  height: 2em;
+  padding: 1em;
+}
+
+#footer > nav > ul > li > a > i{
+  height: 50%;
+}
+
+#footer > nav > ul > li > a {
+  position: absolute;
+  align-self: center;
+  /* left: 0; */
+  height: 1.8em;
+  width: 1.8em;
+  border-radius: 0.5em;
+  color: var(--dark-black);
+  z-index: 5;
+  border: solid 3px transparent;
+  background-color: var(--white-pure);
+  -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+	-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+	-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+	transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+
+}
+
+#footer > nav > ul > li > a:hover {
+  /* background-color:x */
+  background-color: var(--white-dull);
+  border-color: rgba(192, 192, 192, 0.35);
+  cursor: pointer;
 }
