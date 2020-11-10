@@ -149,13 +149,14 @@ body {
 
 
 .content > .collections {
-  width: 80%;
+  width: 100%;
+  border-radius: 1%;
   margin: auto;
   background-color: blue;
 }
 
 .content > .collections > p {
-  width: 80%;
+  width: 60%;
   margin: auto;
   padding-top: 3%;
 }
@@ -179,22 +180,55 @@ body {
   /* padding-right: 10%; */
 }
 
+.content > .collections > .projects > .single_project > .image > .image_outline {
+  background-color: black;
+}
+
+/* .content > .collections > .projects > .single_project > .image::after {
+  content: 'visit project';
+  position: absolute;
+  width: 50%;
+  top: 0;
+  display: block;
+  right: 50%;
+  top:50%;
+} */
+
+.content > .collections > .projects > .single_project > .image  > .image_outline > img {
+  border-radius: 2%;
+  border: 3px solid black;
+  position: relative;
+  max-width: 300px;
+  max-height: 300px;
+  opacity: 1;
+  /* margin-right: 10%; */
+  margin: auto;
+  -moz-transition: opacity 0.35s ease-in-out;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+.content > .collections > .projects > .single_project > .image  > .image_outline > img:hover {
+  opacity: 0;
+}
+
 .content > .collections > .projects > .single_project > .description {
   display: inline-block;
   text-align: left;
   position: absolute;
+  font-size: 0.8em;
   width: 50%;
   height: 80%;
   margin-top: auto;
-  padding: 5% 0 0 10%;
+  padding: 8% 0 0 10%;
 }
 
-
-.content > .collections > .projects > .single_project > .image > img {
-  position: relative;
-  max-width: 300px;
-  max-height: 300px;
+.content > .collections > .projects > .single_project > .description > h3{
+  font-size: 1.1em;
+  font-weight: bold;
 }
+
 
 
 
