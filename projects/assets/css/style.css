@@ -180,7 +180,7 @@ body {
   left: 0;
   right: 0;
   position: absolute;
-  width: 10%;
+  width: 20%;
   height: 1em;
   border-bottom: solid 0.1em red;
 }
@@ -196,6 +196,7 @@ body {
 
 .content > .collections > .projects > .single_project > .image  {
   text-align: right;
+  align-items: right;
   display:inline-block;
   padding-right: 5%;;
   width: 50%;
@@ -213,23 +214,36 @@ body {
   top:50%;
 } */
 
-.content > .collections > .projects > .single_project > .image  > img {
-  border-radius: 2%;
-  border: 3px solid black;
+.content > .collections > .projects > .single_project > .image  > .the_image {
+  text-align: right;
+  max-width: 300px;
+  max-height: 300px;
+  margin-left: auto;
   position: relative;
+  background-color: black;
+  outline-offset: -1.5em;
+  outline: transparent solid 0.15em;
+  -moz-transition: outline 0.35s ease-in-out;
+  -webkit-transition: outline 0.35s ease-in-out;
+  -ms-transition: outline 0.35s ease-in-out;
+  transition: outline 0.35s ease-in-out;
+}
+
+.content > .collections > .projects > .single_project > .image  > .the_image:hover {
+  outline: black;
+}
+
+.content > .collections > .projects > .single_project > .image  > .the_image > a > img {
   max-width: 300px;
   max-height: 300px;
   opacity: 1;
-  /* margin-right: 10%; */
-  background-color: black;
-  margin: auto;
   -moz-transition: opacity 0.35s ease-in-out;
   -webkit-transition: opacity 0.35s ease-in-out;
   -ms-transition: opacity 0.35s ease-in-out;
   transition: opacity 0.35s ease-in-out;
 }
 
-.content > .collections > .projects > .single_project > .image  > img:hover {
+.content > .collections > .projects > .single_project > .image  > .the_image > a > img:hover {
   opacity: 0.5;
 }
 
