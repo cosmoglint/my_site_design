@@ -28,6 +28,7 @@ html {
   line-height: 1.75em;
 
   background-image: url("../images/bg.png");
+  background-size: 100vh 100vw;
   background-position: (0,0);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -121,7 +122,6 @@ body {
 }
 
 .content {
-  background-color: red;
   margin: auto;
   width: 80%;
   height: 100%;
@@ -152,7 +152,7 @@ body {
   width: 100%;
   border-radius: 1%;
   margin: auto;
-  background-color: blue;
+  background-color: white;
 }
 
 .content > .collections > p {
@@ -180,9 +180,6 @@ body {
   /* padding-right: 10%; */
 }
 
-.content > .collections > .projects > .single_project > .image > .image_outline {
-  background-color: black;
-}
 
 /* .content > .collections > .projects > .single_project > .image::after {
   content: 'visit project';
@@ -194,7 +191,7 @@ body {
   top:50%;
 } */
 
-.content > .collections > .projects > .single_project > .image  > .image_outline > img {
+.content > .collections > .projects > .single_project > .image  > img {
   border-radius: 2%;
   border: 3px solid black;
   position: relative;
@@ -202,6 +199,7 @@ body {
   max-height: 300px;
   opacity: 1;
   /* margin-right: 10%; */
+  background-color: black;
   margin: auto;
   -moz-transition: opacity 0.35s ease-in-out;
   -webkit-transition: opacity 0.35s ease-in-out;
@@ -209,8 +207,8 @@ body {
   transition: opacity 0.35s ease-in-out;
 }
 
-.content > .collections > .projects > .single_project > .image  > .image_outline > img:hover {
-  opacity: 0;
+.content > .collections > .projects > .single_project > .image  > img:hover {
+  opacity: 0.5;
 }
 
 .content > .collections > .projects > .single_project > .description {

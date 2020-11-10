@@ -28,8 +28,11 @@ html {
   line-height: 1.75em;
 
   background-image: url("../images/bg.png");
+  background-size: 100vh 100vw;
   background-position: (0,0);
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
