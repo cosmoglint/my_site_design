@@ -168,7 +168,7 @@ body {
 
 .content > .collections > .projects > .single_project {
   position: relative;
-  padding-top: 2em;
+  padding: 2em 0 1em 0;
   text-align: left;
 }
 
@@ -184,8 +184,9 @@ body {
   text-align: left;
   position: absolute;
   width: 50%;
-  top: 50%;
+  height: 80%;
   margin-top: auto;
+  padding: 5% 0 0 10%;
 }
 
 
