@@ -221,30 +221,29 @@ body {
   margin-left: auto;
   position: relative;
   background-color: black;
-  outline-offset: -1.5em;
-  outline: transparent solid 0.15em;
-  -moz-transition: outline 0.35s ease-in-out;
-  -webkit-transition: outline 0.35s ease-in-out;
-  -ms-transition: outline 0.35s ease-in-out;
-  transition: outline 0.35s ease-in-out;
+  -moz-transition: ;
+  -webkit-transition: ;
+  -ms-transition: ;
+  transition: ;
 }
 
-.content > .collections > .projects > .single_project > .image  > .the_image:hover {
-  outline: black;
-}
+
 
 .content > .collections > .projects > .single_project > .image  > .the_image > a > img {
   max-width: 300px;
   max-height: 300px;
+  outline: transparent solid 0.15em;
+  outline-offset: -1.5em;
   opacity: 1;
-  -moz-transition: opacity 0.35s ease-in-out;
-  -webkit-transition: opacity 0.35s ease-in-out;
-  -ms-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out;
+  -moz-transition: opacity 0.35s ease-in-out, outline 0.35s ease-in-out;
+  -webkit-transition: opacity 0.35s ease-in-out, outline 0.35s ease-in-out;
+  -ms-transition: opacity 0.35s ease-in-out, outline 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out, outline 0.35s ease-in-out;
 }
 
 .content > .collections > .projects > .single_project > .image  > .the_image > a > img:hover {
   opacity: 0.5;
+  outline-color: white;
 }
 
 .content > .collections > .projects > .single_project > .description {
