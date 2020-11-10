@@ -173,7 +173,7 @@ body {
 }
 
 .content > .collections > .projects > .single_project > .image  {
-
+  text-align: right;
   display:inline-block;
   width: 50%;
   /* padding-right: 10%; */
@@ -181,6 +181,7 @@ body {
 
 .content > .collections > .projects > .single_project > .description {
   display: inline-block;
+  text-align: left;
   position: absolute;
   width: 50%;
   top: 50%;
