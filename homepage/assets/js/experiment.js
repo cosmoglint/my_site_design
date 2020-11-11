@@ -3,8 +3,6 @@ var w_height = window.innerHeight;
 var x = 80;
 var y = 80;
 var tri_size = 50;
-//var wn = w_width/x;
-//var hn = w_height/y;
 var noise_scale = 30;
 var tries = [];
 var moving = 0;
@@ -52,17 +50,12 @@ function setter(){
 				p = createVector(l,m-tri_size+20);
 				q = createVector(l+tri_size+20,m+tri_size-20);
 				r = createVector(l-tri_size-20,m+tri_size-20);
-	//			tries[i][j] = new tris(i*x,j*y);
 			}
 			else{
 				p = createVector(l,m+tri_size-20);
 				q = createVector(l-tri_size-20,m-tri_size+20);
 				r = createVector(l+tri_size+20,m-tri_size+20);
 			}
-//			sizer = 60;
-//			p = createVector(l+random(-sizer,sizer),m+random(-sizer,sizer));
-//			q = createVector(l+random(-sizer,sizer),m+random(-sizer,sizer));
-//			r = createVector(l+random(-sizer,sizer),m+random(-sizer,sizer));
 			tries[i][j] = new tris(p,q,r);
 		}
 	}
@@ -107,10 +100,6 @@ function change_direction(){
 window.addEventListener('resize', reportsize);
 
 
-// changing theme to dark when clicked
-// window.addEventListener('click', change_direction);
-
-//window.addEventListener('mousemove', aversion);
 
 function init(){
 	var black = color(0,0,0);
@@ -123,10 +112,6 @@ function init(){
 	canvas.position(0,0);
 	canvas.style('z-index','-2');
 	lister(wn,hn);
-//	p = createVector(50,50);
-//	q = createVector(ww/2,wh-50);
-//	r = createVector(ww-300,wh-50);
-//	the_tr = new tris(p,q,r);
 	i_off = 0;
 	for (i = 0; i < wn; i++){
 		j_off = 0;
@@ -177,7 +162,6 @@ function draw(){
 	my_name.style.color = ncol;
 	fill(circle_color);
 	circle(mouseX,mouseY,5);
-	// circle(mouseX,mouseY,10);
 
 	dark_mode_button.onclick = function(){change_direction();};
 
